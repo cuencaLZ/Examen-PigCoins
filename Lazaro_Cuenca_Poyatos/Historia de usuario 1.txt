@@ -1,0 +1,7 @@
+Historia de usuario 1:
+el usuario
+solicia las claves de su Wallet
+para poder usarla
+-detalles
+cuando el usurio le da al boton de recibir clave public y privada, el sistema genera estas claves aleatoria y las guarda.
+-Casos test --> testAddress y testSk
