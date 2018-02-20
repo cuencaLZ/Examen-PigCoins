@@ -51,10 +51,10 @@ public class Wallet {
 	}
 	@Override
 	public String toString() {
-		return "Wallet [getAddress()=" + getAddress() + 
-				", getTotal_input()="+ getTotal_input() + 
-				", getTotal_output()=" + getTotal_output() + 
-				", getBalance()=" + getBalance()
+		return "Wallet [Address=" + getAddress() + 
+				", Total_input="+ getTotal_input() + 
+				", Total_output=" + getTotal_output() + 
+				", Balance=" + getBalance()
 				+ "]";
 	}
 	
