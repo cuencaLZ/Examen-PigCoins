@@ -83,10 +83,10 @@ public class Wallet {
 	}
 	@Override
 	public String toString() {
-		return "Wallet [address=" + address.hashCode() + ", "
-				+ "total_input=" + total_input + 
-				", total_output="+ total_output + 
-				", balance=" + balance + "]";
+		return "\n"+"Wallet [address=" + address.hashCode() +"\n"+ " "
+				+ "total_input=" + total_input +"\n"+ 
+				" total_output="+ total_output +"\n"+
+				" balance=" + balance + "]"+"\n";
 	}
 	public ArrayList<Transaction> getInputTransactions() {
 		return inputTransactions;

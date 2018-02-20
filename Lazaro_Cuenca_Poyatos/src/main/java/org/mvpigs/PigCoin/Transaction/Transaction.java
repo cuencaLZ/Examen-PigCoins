@@ -68,13 +68,13 @@ public class Transaction {
 	}
 	@Override
 	public String toString() {
-		return "Transaction [hash=" + hash + 
-				", prev_hash=" + prev_hash + 
-				", pKey_sender=" + pKey_sender.hashCode()
-				+ ", p_Key_recipient=" + p_Key_recipient.hashCode() + 
-				", pigcoins=" + pigcoins + 
-				", message=" + message
-				+ ", signature=" + Arrays.toString(signature) + "]";
+		return "\n"+"Transaction [\n"+"hash=" + hash +"\n"+
+				" prev_hash=" + prev_hash +"\n"+
+				" pKey_sender=" + pKey_sender.hashCode()
+				+"\n"+ " p_Key_recipient=" + p_Key_recipient.hashCode() +"\n"+
+				" pigcoins=" + pigcoins +"\n"+
+				" message=" + message
+				+"\n"+ " signature=" + Arrays.toString(signature) + "]"+"\n";
 	}
 	
 	
