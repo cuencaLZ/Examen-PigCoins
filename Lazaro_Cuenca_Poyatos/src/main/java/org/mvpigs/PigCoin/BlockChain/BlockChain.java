@@ -7,10 +7,9 @@ import org.mvpigs.PigCoin.Main.GenSig;
 import org.mvpigs.PigCoin.Transaction.Transaction;
 
 public class BlockChain {
-	private ArrayList<Transaction> blockChain;
+	private ArrayList<Transaction> blockChain = new ArrayList<Transaction>();
 	
 	public BlockChain() {
-		blockChain= new ArrayList<>();
 	}
 	
 	public void addOrigin(Transaction transaction) {
