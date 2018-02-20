@@ -1,0 +1,9 @@
+Historia de usuario 2:
+Quien -> el usuario
+Que -> crea la wallet_2 y visualiza las dos wallet.
+para que-> para visualizar el contenido, address publica y posibles transacciones.
+detalles:
+el usuario da click en el boton de crear 2 wallet y est una vez creada ya da automaticamente las claves publica y privada,
+el usuario despues da click en visualizar wallets.
+--------------------------------------------------
+Los casos test  son testMostrarWallets.

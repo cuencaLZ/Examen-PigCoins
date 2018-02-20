@@ -12,7 +12,7 @@ public class Wallet {
 	private PrivateKey sKey;
 	private double total_input;
 	private double total_output;
-	private double blance;
+	private double balance;
 	
 	public void generateKeyPair() {
 		KeyPair Claves= GenSig.generateKeyPair();
@@ -31,6 +31,35 @@ public class Wallet {
 	public PrivateKey getsKey() {
 		return sKey;
 	}
+	public double getTotal_input() {
+		return total_input;
+	}
+	public void setTotal_input(double total_input) {
+		this.total_input = total_input;
+	}
+	public double getTotal_output() {
+		return total_output;
+	}
+	public void setTotal_output(double total_output) {
+		this.total_output = total_output;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	@Override
+	public String toString() {
+		return "Wallet [getAddress()=" + getAddress() + 
+				", getTotal_input()="+ getTotal_input() + 
+				", getTotal_output()=" + getTotal_output() + 
+				", getBalance()=" + getBalance()
+				+ "]";
+	}
+	
+	
+	
 	
 
 }

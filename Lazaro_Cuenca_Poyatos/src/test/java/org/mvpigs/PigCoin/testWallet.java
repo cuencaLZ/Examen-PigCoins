@@ -15,6 +15,17 @@ public class testWallet {
 
 	public class testClaseWallet {
 		Wallet wallet_1;
+		Wallet wallet_2;
+		
+		@Before
+		public void testCostructor() {
+			wallet_1=new Wallet();
+			wallet_1.generateKeyPair();
+			
+			wallet_2=new Wallet();
+			wallet_2.generateKeyPair();
+			
+		}
 		
 		@Test
 		public void testAddress() {
@@ -29,6 +40,11 @@ public class testWallet {
 			PrivateKey sKey = pair.getPrivate();
 			wallet_1.setSk(sKey);
 			assertEquals(sKey,wallet_1.getsKey());
+		}
+		@Test
+		public void testMostrarWallets() {
+			System.out.println("wallet_1:" + wallet_1.toString());
+			System.out.println("wallet_2:" + wallet_2.toString());
 		}
 	}
 }
