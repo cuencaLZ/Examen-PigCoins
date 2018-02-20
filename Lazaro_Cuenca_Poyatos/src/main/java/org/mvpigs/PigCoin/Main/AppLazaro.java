@@ -209,8 +209,8 @@ public class AppLazaro {
          */
 
         Double pigcoins = 25d;
-        Map<String, Double> consumedCoins = wallet_1.collectCoins(pigcoins);
-        System.out.println("Pigcoins enviados a la wallet_2 y transacciones consumidas: " + consumedCoins);
+        //Map<String, Double> consumedCoins = wallet_1.collectCoins(pigcoins);
+        //System.out.println("Pigcoins enviados a la wallet_2 y transacciones consumidas: " + consumedCoins);
 
         /**
          * Una vez que recolectes los pigcoins (transacciones) de tu wallet

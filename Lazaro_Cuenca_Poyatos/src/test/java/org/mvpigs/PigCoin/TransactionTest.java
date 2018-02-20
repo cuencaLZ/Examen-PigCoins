@@ -20,14 +20,13 @@ public class TransactionTest {
 		wallet_2=new Wallet();
 		wallet_2.generateKeyPair();
 		
-		Transaction trx =new Transaction();
+		 trx =new Transaction();
 		trx = new Transaction("hash_1", "0", wallet_1.getAddress(), wallet_2.getAddress(), 20, "a flying pig!");
 		
 	}
 	@Test
 	public void TestCrearTransaccion() {
-		System.out.println(trx.toString());
-		
+		System.out.println(trx.toString());		
 	}
 	
 }
