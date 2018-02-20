@@ -38,7 +38,7 @@ public class testWallet {
 		public void testSk() {
 			KeyPair pair = GenSig.generateKeyPair();
 			PrivateKey sKey = pair.getPrivate();
-			wallet_1.setSk(sKey);
+			wallet_1.setSK(sKey);
 			assertEquals(sKey,wallet_1.getsKey());
 		}
 		@Test

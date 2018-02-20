@@ -10,9 +10,9 @@ import org.mvpigs.PigCoin.Main.GenSig;
 public class Wallet {
 	private PublicKey address;
 	private PrivateKey sKey;
-	private double total_input;
-	private double total_output;
-	private double balance;
+	private double total_input=0;
+	private double total_output=0;
+	private double balance=0;
 	
 	public void generateKeyPair() {
 		KeyPair Claves= GenSig.generateKeyPair();
@@ -22,7 +22,7 @@ public class Wallet {
 	public void setAddress(PublicKey pKey) {
 		address=pKey;
 	}
-	public void setSk(PrivateKey sKey) {
+	public void setSK(PrivateKey sKey) {
 		this.sKey=sKey;
 	}
 	public PublicKey getAddress() {
@@ -46,17 +46,18 @@ public class Wallet {
 	public double getBalance() {
 		return balance;
 	}
-	public void setBalance(double balance) {
+	public void setBalance() {
+		double balance = getTotal_input() - getTotal_output();
 		this.balance = balance;
 	}
 	@Override
 	public String toString() {
-		return "Wallet [Address=" + getAddress() + 
-				", Total_input="+ getTotal_input() + 
-				", Total_output=" + getTotal_output() + 
-				", Balance=" + getBalance()
-				+ "]";
+		return "Wallet [address=" + address + ", "
+				+ "total_input=" + total_input + 
+				", total_output="+ total_output + 
+				", balance=" + balance + "]";
 	}
+	
 	
 	
 	

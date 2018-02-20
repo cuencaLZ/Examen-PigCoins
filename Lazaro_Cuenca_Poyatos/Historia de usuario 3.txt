@@ -1,0 +1,9 @@
+Historias usuario 3:
+quien-> el usuario
+que-> crea una transaccion
+para-> trasmitir pigcoins de una wallet a otra.
+detalles.
+el usuario crea una transaccion para trasladar 20 Pigcoins de la wallet_1 a la wallet_2
+----------------------------------------------------------------------------------------
+test.
+los test para comprobar esta operacion estan ejecutados en TransactionTest.
