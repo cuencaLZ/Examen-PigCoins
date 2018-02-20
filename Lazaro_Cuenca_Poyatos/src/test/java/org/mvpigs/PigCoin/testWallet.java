@@ -14,21 +14,21 @@ import org.mvpigs.PigCoin.Wallet.Wallet;
 public class testWallet {
 
 	public class testClaseWallet {
-		Wallet wallet;
+		Wallet wallet_1;
 		
 		@Test
 		public void testAddress() {
 			KeyPair pair = GenSig.generateKeyPair();
 			PublicKey address = pair.getPublic();
-			wallet.setAddress(address);
-			assertEquals(address,wallet.getAddress());
+			wallet_1.setAddress(address);
+			assertEquals(address,wallet_1.getAddress());
 		}
 		@Test
 		public void testSk() {
 			KeyPair pair = GenSig.generateKeyPair();
 			PrivateKey sKey = pair.getPrivate();
-			wallet.setSk(sKey);
-			assertEquals(sKey,wallet.getsKey());
+			wallet_1.setSk(sKey);
+			assertEquals(sKey,wallet_1.getsKey());
 		}
 	}
 }
