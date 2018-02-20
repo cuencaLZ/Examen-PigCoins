@@ -1,0 +1,8 @@
+Historia de usuario 5:
+quien--> el usuario
+que -->solicita ver el load_coins de una wallet
+para-> informarse de los movimientos en dicha wallet
+detalles- El usuario solicita ver la informacion de la wallet que le indica los pigcoins que se han enviado y recibido asi como el balance total actualizado.
+-------------------------------------------------------------------------------------------
+TEST.
+Los test son testloadCoin en testWallet.java
