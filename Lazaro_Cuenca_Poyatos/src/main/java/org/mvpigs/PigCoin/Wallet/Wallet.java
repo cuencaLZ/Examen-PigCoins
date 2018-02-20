@@ -16,8 +16,8 @@ public class Wallet {
 	private double total_input=0;
 	private double total_output=0;
 	private double balance=0;
-	private ArrayList<Transaction> inputTransactions;
-	private ArrayList<Transaction> outputTransactions;
+	private ArrayList<Transaction> inputTransactions = new ArrayList<Transaction>();;
+	private ArrayList<Transaction> outputTransactions = new ArrayList<Transaction>();
 	
 	public void generateKeyPair() {
 		KeyPair Claves= GenSig.generateKeyPair();
@@ -83,7 +83,7 @@ public class Wallet {
 	}
 	@Override
 	public String toString() {
-		return "Wallet [address=" + address + ", "
+		return "Wallet [address=" + address.hashCode() + ", "
 				+ "total_input=" + total_input + 
 				", total_output="+ total_output + 
 				", balance=" + balance + "]";
