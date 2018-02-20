@@ -1,0 +1,9 @@
+Historia de usuario 4:
+Quien-El sistema
+Que-crea el blockchain
+para dejar registro de las transacciones.
+detalles-
+El Blockchain muestra una lista de transacciones de las que hemos realializado o recibido.
+------------------------------------------------------------------------------------------
+TEST.
+Los test estan en BlockChainTest.

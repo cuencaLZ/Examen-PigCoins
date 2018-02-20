@@ -3,7 +3,13 @@ package org.mvpigs.PigCoin.Main;
 import java.security.KeyPair;
 import java.util.Map;
 
-public class App {
+import org.mvpigs.PigCoin.BlockChain.BlockChain;
+import org.mvpigs.PigCoin.Transaction.Transaction;
+import org.mvpigs.PigCoin.Wallet.Wallet;
+
+
+
+public class AppLazaro {
 
     public static void main( String[] args )
     {

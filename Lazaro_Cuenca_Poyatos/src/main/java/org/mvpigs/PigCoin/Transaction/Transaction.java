@@ -15,7 +15,7 @@ public class Transaction {
 	public Transaction() {
 		
 	}
-	public Transaction(String hash,String prev_hash,PublicKey p_KeySender,PublicKey p_Key_recipient,int pigcoins,String message) {
+	public Transaction(String hash,String prev_hash,PublicKey p_KeySender,PublicKey p_Key_recipient,double pigcoins,String message) {
 		this.hash=hash;
 		this.prev_hash=prev_hash;
 		this.pKey_sender=p_KeySender;
