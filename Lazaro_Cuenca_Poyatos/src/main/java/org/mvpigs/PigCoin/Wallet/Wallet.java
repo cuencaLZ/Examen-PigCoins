@@ -151,7 +151,8 @@ public class Wallet {
 	public byte[] signTransaction(String message) {
 		return GenSig.sign(sKey, message);
 	}
-	public void sendCoins(PublicKey pKey_recipient, double coins, String message, BlockChain bChain){
+		public void sendCoins(PublicKey pKey_recipient, double coins, String message, BlockChain bChain){
+		if(total_input>=(total_output+coins)) {
 	       Transaction trx=new Transaction();
 	       trx.setMessage(message);
 	       trx.setPigcoins(coins);
@@ -159,9 +160,9 @@ public class Wallet {
 	       trx.setpKey_sender(address);
 	       trx.setSignature(GenSig.sign(sKey,message));
 	       bChain.processTransactions(address,pKey_recipient,coins,trx);
-	       total_output=total_output+coins; //Actualizamos total de enviados
-	   }
-	
+			total_output = total_output + coins; //Actualizamos total de enviados
+		}
+		}
 	
 	
 	
