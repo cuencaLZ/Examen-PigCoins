@@ -11,6 +11,7 @@ public class Transaction {
 	private double pigcoins;
 	private String message;
 	private byte[] signature;
+	private boolean consumida=false;
 	
 	public Transaction() {
 		
@@ -75,6 +76,13 @@ public class Transaction {
 				" pigcoins=" + pigcoins +"\n"+
 				" message=" + message
 				+"\n"+ " signature=" + Arrays.toString(signature) + "]"+"\n";
+	}
+	public boolean isConsumida() {
+		return consumida;
+	}
+	public void setConsumida(boolean consumida) {
+		this.consumida = consumida;
+		
 	}
 	
 	
